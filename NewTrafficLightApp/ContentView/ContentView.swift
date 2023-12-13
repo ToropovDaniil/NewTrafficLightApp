@@ -17,16 +17,23 @@ struct ContentView: View {
 		ZStack {
 			Color.black
 				.ignoresSafeArea()
+			
 			VStack {
-				SwiftCircleView(opacity: redLight ? 1 : 0.5,
-								color: .red, width: 100,
-								shadowRadius: redLight ? 10 : 0)
-				SwiftCircleView(opacity: yellowLight ? 1 : 0.5,
-								color: .yellow, width: 100,
-								shadowRadius: yellowLight ? 10 : 0)
-				SwiftCircleView(opacity: greenLight ? 1 : 0.5,
-								color: .green, width: 100,
-								shadowRadius: greenLight ? 10 : 0)
+				SwiftCircleView(
+					opacity: redLight ? 1 : 0.5,
+					color: .red, width: 100,
+					shadowRadius: redLight ? 10 : 0)
+				
+				SwiftCircleView(
+					opacity: yellowLight ? 1 : 0.5,
+					color: .yellow, width: 100,
+					shadowRadius: yellowLight ? 10 : 0)
+				
+				SwiftCircleView(
+					opacity: greenLight ? 1 : 0.5,
+					color: .green, width: 100,
+					shadowRadius: greenLight ? 10 : 0)
+				
 				Spacer()
 				
 				Button(action: {
