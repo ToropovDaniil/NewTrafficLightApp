@@ -10,7 +10,6 @@ import SwiftUI
 struct ButtonView: View {
     var body: some View {
 		
-		
 		Button(action: {
 			
 		}) {

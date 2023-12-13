@@ -11,6 +11,8 @@
 		AB8C61A82B29A940007AFCB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C61A72B29A940007AFCB5 /* ContentView.swift */; };
 		AB8C61AA2B29A942007AFCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8C61A92B29A942007AFCB5 /* Assets.xcassets */; };
 		AB8C61AD2B29A942007AFCB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8C61AC2B29A942007AFCB5 /* Preview Assets.xcassets */; };
+		AB8C61B42B29A9D2007AFCB5 /* SwiftCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C61B32B29A9D2007AFCB5 /* SwiftCircleView.swift */; };
+		AB8C61B62B29ADED007AFCB5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C61B52B29ADED007AFCB5 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AB8C61A72B29A940007AFCB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB8C61A92B29A942007AFCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB8C61AC2B29A942007AFCB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB8C61B32B29A9D2007AFCB5 /* SwiftCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCircleView.swift; sourceTree = "<group>"; };
+		AB8C61B52B29ADED007AFCB5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +55,38 @@
 		AB8C61A42B29A940007AFCB5 /* NewTrafficLightApp */ = {
 			isa = PBXGroup;
 			children = (
-				AB8C61A52B29A940007AFCB5 /* NewTrafficLightAppApp.swift */,
-				AB8C61A72B29A940007AFCB5 /* ContentView.swift */,
-				AB8C61A92B29A942007AFCB5 /* Assets.xcassets */,
-				AB8C61AB2B29A942007AFCB5 /* Preview Content */,
+				AB8C61B82B29D282007AFCB5 /* ContentView */,
+				AB8C61B72B29D243007AFCB5 /* Views */,
+				AB8C61AB2B29A942007AFCB5 /* Content */,
 			);
 			path = NewTrafficLightApp;
 			sourceTree = "<group>";
 		};
-		AB8C61AB2B29A942007AFCB5 /* Preview Content */ = {
+		AB8C61AB2B29A942007AFCB5 /* Content */ = {
 			isa = PBXGroup;
 			children = (
 				AB8C61AC2B29A942007AFCB5 /* Preview Assets.xcassets */,
+				AB8C61A92B29A942007AFCB5 /* Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = Content;
+			sourceTree = "<group>";
+		};
+		AB8C61B72B29D243007AFCB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB8C61B52B29ADED007AFCB5 /* ButtonView.swift */,
+				AB8C61B32B29A9D2007AFCB5 /* SwiftCircleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB8C61B82B29D282007AFCB5 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				AB8C61A52B29A940007AFCB5 /* NewTrafficLightAppApp.swift */,
+				AB8C61A72B29A940007AFCB5 /* ContentView.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8C61B42B29A9D2007AFCB5 /* SwiftCircleView.swift in Sources */,
 				AB8C61A82B29A940007AFCB5 /* ContentView.swift in Sources */,
+				AB8C61B62B29ADED007AFCB5 /* ButtonView.swift in Sources */,
 				AB8C61A62B29A940007AFCB5 /* NewTrafficLightAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +311,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NewTrafficLightApp.NewTrafficLightApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,6 +343,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NewTrafficLightApp.NewTrafficLightApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

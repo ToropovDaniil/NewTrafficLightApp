@@ -27,7 +27,6 @@ struct ContentView: View {
 				SwiftCircleView(opacity: greenLight ? 1 : 0.5,
 								color: .green, width: 100,
 								shadowRadius: greenLight ? 10 : 0)
-				
 				Spacer()
 				
 				Button(action: {
@@ -41,9 +40,8 @@ struct ContentView: View {
 						self.redLight = false
 						self.yellowLight = true
 						self.greenLight = false
-					}
-					
-					else if self.yellowLight {
+						
+					} else if self.yellowLight {
 						self.redLight = false
 						self.yellowLight = false
 						self.greenLight = true
